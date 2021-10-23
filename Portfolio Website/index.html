@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/d4e537e219.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-chevron-circle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class='logo'><a href='#'><i class="fas fa-award"></i>  Portfol<span>io.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#social" class="menu-btn">Social</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">
+                    Hello, my name is
+                </div>
+                <div class="text-2">
+                    Nishant
+                </div>
+                <div class="text-3">
+                    And I'm <span class="typing-1"></span>
+                </div>
+                <a href="#contact">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section satrts -->
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title"> About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/me2.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        I am Nishant & I'm<br>
+                        <span class="typing-2"></span></div>
+                    <p>
+                        I was born and brought up in the City of Dreams, Mumbai. I have completed my schooling at St.Joseph's High School, Wadala, and higher education from G.N. Khalsa College, Matunga. Currently, I'm pursuing a degree in Computer Engineering from Vidyalankar
+                        Institute of Technology(VIT).<br> I have a passion for learning about new technology and stay up to date with it. I also like designing stuff and making it look cool, traveling to new places and embracing
+                        their culture, taking pictures of people and landscapes artistically, trying out new dishes as well as blogging about it. Currently, I'm a member of the Event's core in the Fintech Club of VIT. There I do publicity as well as management
+                        of the events.<br> My motto is "Solving Modern Life Problems in a Creative & Innovative way. "
+
+                    </p>
+                    <a href="data/Nishant Sarang. (2).pdf" download="nishant_sarang">Download C.V.</a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="social" id="social">
+        <div class="max-width">
+            <h2 class="title">My Social Media Handles</h2>
+            <div class="social-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-instagram"></i>
+                        <div class="text1">Instagram</div>
+                        <a href="https://www.instagram.com/_mr._s.t.a.r.k/">_mr._s.t.a.r.k</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="text2">LinkedIn</div>
+                        <a href="https://www.linkedin.com/in/nishant-sarang-877a121b1/">Nishant Sarang</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-facebook"></i>
+                        <div class="text3">Facebook</div>
+                        <a href="https://www.facebook.com/nishant.sarang.353">Nishant Sarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="skills" id='skills'>
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My Creaive Skills and Experience</div>
+                    <p>My Skillset includes programming languages, website and app UI designing, digital marketing, photography, and content writing. I'm great at teamwork, interpersonal skills, and leadership qualities.
+                        <span id="dots">. . . . .</span><span id="more"><br>I'm well versed in "C" and "C++" programming languages and have hands-on experience using Python from most of my projects and courses through platforms like Coursera, EDx, and Udemy. I have used dart in Flutter to create applications as mini-projects in my college years. I have used  HTML CSS5, Javascript, and PHP  to make this portfolio website and other projects. I am also well versed in digital marketing skills like SEO, SEM, Data Analytics, Campaign Management.</span></p>
+                    <!--<a href>Read More</a>-->
+                    <button type="button" id="read" onclick="read()">Read More</button>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>
+                                HTML
+                            </span>
+                            <span>
+                                90%
+                            </span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>
+                                CSS
+                            </span>
+                            <span>
+                                80%
+                            </span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>
+                                JavaScript
+                            </span>
+                            <span>
+                                70%
+                            </span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>
+                                Python
+                            </span>
+                            <span>
+                                85%
+                            </span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>
+                                C/C++
+                            </span>
+                            <span>
+                                85%
+                            </span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>
+                                Dart
+                            </span>
+                            <span>
+                                80%
+                            </span>
+                        </div>
+                        <div class="line dart"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--projects-->
+
+
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div clas="box">
+                        <img src="images/stock_price.jpg" alt="">
+                        <div class="text"><a href='https://stock-predictor-ml.herokuapp.com/'>Stock-Price Predictor</a></div>
+                        <p>Stock price prediction of 3 companies using Machine learning and Deep Learning</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div clas="box">
+                        <img src="images/bone.jpg" alt="">
+                        <div class="text"><a href="https://github.com/nnish16/Bone-anomoly-detector">Bone-Anamoly Detector</a></div>
+                        <p>Bone-Anamoly detection using Open CV , Machine learning and Deep Learning.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div clas="box">
+                        <img src="images/brick.PNG" alt="">
+                        <div class="text"><a href="https://github.com/nnish16/Javaproject-BrickBreaker">Brick-Breaker Game</a>
+                        </div>
+                        <p>A simple BrickBreaker game made using Java for as a miniproject</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div clas="box">
+                        <img src="images/management-systems.jpg" alt="">
+                        <div class="text"><a href='https://github.com/nnish16/Hospital-Management-sys-py'>Hospital Management System</a></div>
+                        <p>A simple Hospital management system using python and it's libraries</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div clas="box">
+                        <img src="images/car.png" alt="">
+                        <div class="text">Traffic Prediction app</div>
+                        <p>An app made in Flutter using Dart with ML in the backend.(Inprogess..)</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div clas="box">
+                        <img src="images/coming-soon.jpg" alt="">
+                        <div class="text">New Project Comming Soon</div>
+                        <p>Stay tuned for more projects... Currently workig on another project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Hello viewers! Thank you for taking the time to go through my portfolio website. If you wish to contact me, directly mail me through the box on the right side. You can also get in touch with me through my social media handles mentioned
+                        in the Social section. Your valuable feedback about my projects or site would be greatly appreciated. <br>Feel free to contact me for any internships, offers, collaboration, or help in projects</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user-secret"></i>
+                            <div class="info">
+                                <div class="head"> Name :</div>
+                                <div class="sub-title"> Nishant Sarang</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone-square-alt"></i>
+                            <div class="info">
+                                <div class="head"> Phone no :</div>
+                                <div class="sub-title">
+                                    <div class='text'>8104202866</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <div class="info">
+                                <div class="head"> Email :</div>
+                                <div class="sub-title"> sarangnishant@gmail.com </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message ME</div>
+                    <form action="https://formspree.io/f/mayakwvz" method="post" id="my-form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols: "30" rows: "10" placeholder="Describe"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div id="status"></div>
+    </section>
+
+    <footer>
+        <span>Created by <a href="#"> Mr.StarK </a><span class="far fa-copyrigt"></span> 2021 all rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var i = 0;
+
+        function read() {
+            if (!i) {
+                document.getElementById("more").style.display = "inline";
+                document.getElementById("dots").style.display = "none";
+                document.getElementById("read").innerHTML = "Read less";
+                i = 1;
+            } else {
+                document.getElementById("more").style.display = "none";
+                document.getElementById("dots").style.display = "inline";
+                document.getElementById("read").innerHTML = "Read more";
+                i = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

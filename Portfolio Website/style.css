@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=Dancing+Script:wght@500&family=Great+Vibes&family=Kaushan+Script&family=Permanent+Marker&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Ephesis&family=Grey+Qo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1250px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 25px 0;
+    /*background: crimson;*/
+    font-family: 'Kaushan Script';
+    transition: all 0.3s ease-in;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: gold;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.navbar .logo a span {
+    color: gold;
+}
+
+.navbar .logo a i {
+    color: gold;
+}
+
+.navbar.sticky .logo a span {
+    color: white;
+}
+
+.navbar.sticky .logo i {
+    color: white;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.navbar .menu li a:hover {
+    color: gold;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: gold;
+}
+
+
+/*menu button style*/
+
+.menu-btn {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    z-index: 9999;
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: gold;
+    color: white;
+    right: 30px;
+    bottom: 10px;
+    pointer-events: none;
+    transition: all 0.3 ease-in-out;
+    opacity: 0;
+}
+
+.scroll-up-btn.show {
+    bottom: 35px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*home section styling*/
+
+.home {
+    display: flex;
+    background: url('images/Screenshot\ 2021-09-20\ 1400691.jpg') no-repeat;
+    height: 100px;
+    color: #fff;
+    min-height: 600px;
+    font-family: 'Dancing Script';
+}
+
+.home .max-width {
+    margin: auto 0 auto 5px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+    margin-left: -15px;
+    margin-top: 50px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -20px;
+    font-family: 'Kaushan Script';
+    color: gold;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin: 5px 0;
+    margin-left: -15px;
+}
+
+.home .home-content .text-3 span {
+    /* margin-left: 170px;*/
+    color: gold;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: gold;
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    margin-left: -10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid gold;
+    transition: all 0.3s ease-in-out;
+}
+
+.home .home-content a:hover {
+    color: gold;
+    background: none;
+}
+
+
+/*Common Styling section*/
+
+.about,
+.social,
+.skills,
+.projects,
+.contact,
+.footer {
+    font-family: 'Kaushan Script';
+    background: black;
+    color: white;
+}
+
+.about .about-content,
+.social .social-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Karma', serif;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    /*font-family: 'Carattere', cursive;*/
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: red;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    font-family: 'Kaushan Script';
+    text-align: center;
+    left: 50%;
+    position: absolute;
+    bottom: -15px;
+    font-size: 20px;
+    color: gold;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+
+/*about Section*/
+
+.about .title::after {
+    content: " Who am I ?";
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 380px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Gluten', cursive;
+}
+
+.about .about-content .right .text span {
+    color: gold;
+}
+
+.about .about-content .right .p {
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 100px
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: gold;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 11px;
+    margin-top: 25px;
+    margin-left: 0px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid gold;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .about-content .right a:hover {
+    color: gold;
+    background: none;
+}
+
+#more {
+    display: none;
+}
+
+button {
+    margin-top: 10px;
+    background-color: gold;
+    border: gold solid 2px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: gold;
+    background: none;
+}
+
+
+/*Scoial links*/
+
+
+/*.social {
+    background: white;
+    color: black
+}*/
+
+.social .title::after {
+    content: "Find ME Here";
+}
+
+.social .social-content .card {
+    width: calc(33% - 80px);
+    height: 180px;
+    background: gold;
+    border-radius: 15px;
+    padding: 20px 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.social .social-content .card .box {
+    transition: all 0.3s ease-in-out;
+}
+
+.social .social-content .card:hover {
+    transform: scale(1.2);
+    background: white;
+}
+
+.social .social-content .card:hover .box {
+    transform: scale(1.2);
+    color: gold;
+}
+
+.social .social-content .card:hover a {
+    color: gold;
+}
+
+.social .social-content .card i {
+    font-size: 50px;
+}
+
+.social .social-content .card .text1 {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 7px 0 7px 0;
+}
+
+.social .social-content .card .text2 {
+    color: rgb(69, 126, 231);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 7px 0 7px 0;
+}
+
+.social .social-content .card .text3 {
+    color: rgb(13, 13, 214);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 7px 0 7px 0;
+}
+
+.social .social-content .card a {
+    font-family: "Dancing Script";
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+/*skills Styling*/
+
+.skills .title::after {
+    content: "What I Know";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /*font-family: 'Carattere', cursive;*/
+    /*font-family: 'Carattere', cursive;*/
+    font-family: 'Dancing Script';
+    color: gold;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: gold;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 10px;
+    margin-top: 17px;
+    margin-left: 0px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid gold;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills .skills-content .left a:hover {
+    color: Gold;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.skills .skills-content .right span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .skills-content .right .line {
+    height: 7px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 10px
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-color: gold;
+    border-radius: 10px
+}
+
+.skills .skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills .skills-content .right .css::before {
+    width: 80%;
+}
+
+.skills .skills-content .right .js::before {
+    width: 70%;
+}
+
+.skills .skills-content .right .python::before {
+    width: 85%;
+}
+
+.skills .skills-content .right .php::before {
+    width: 85%;
+}
+
+.skills .skills-content .right .dart::before {
+    width: 80%;
+}
+
+
+/*projects section*/
+
+.projects .title::after {
+    content: "My work";
+}
+
+.projects .carousel .card {
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    justify-items: center;
+    background: #222;
+    border-radius: 8px;
+    padding: 25px 35px;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects .carousel .card .text {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card:hover {
+    background: gold;
+    transform: scale(1.05);
+}
+
+.projects .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .carousel .card img {
+    margin: 20%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid gold;
+}
+
+.projects .carousel .card:hover img {
+    border-color: white;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid white!important;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-dot.active {
+    width: 30px;
+    border-radius: 10px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: gold!important;
+}
+
+.contact .title::after {
+    content: 'Reach Me';
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 20px);
+}
+
+.contact .contact-content .text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 15px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 25px;
+}
+
+.contact .contact-content .row i {
+    font-size: 30px;
+    color: gold;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 600;
+}
+
+.contact .contact-content .info .sub-title {
+    font-family: 'Dancing Script';
+    font-size: 25px;
+    color: gold;
+}
+
+.contact .contact-content .info .sub-title .text {
+    font-family: 'Dancing Script';
+    margin-top: 8px;
+    font-size: 16px;
+    color: gold;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 55px;
+    width: 97%;
+}
+
+.contact .right form .name {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contact .right form .field {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .right form .email {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contact .right form .button {
+    margin: 10px;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+}
+
+.contact .right form .button button {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    background: gold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .right form .button button:hover {
+    color: gold;
+    background-color: black;
+}
+
+.contact .right form .textarea {
+    height: 125px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    color: gold;
+    outline: none;
+    border: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    align-content: center;
+    font-size: 20px;
+}
+
+.contact .right form .textarea textarea {
+    padding: 10px;
+    resize: none;
+}
+
+footer {
+    background: gold;
+    padding: 2px 20px;
+}
+
+footer span a {
+    font-family: 'Carattere', cursive;
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+#status {
+    /*font-family: ;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+    /*background: yellow;
+    color: black;*/
+}
+
+#status.success {
+    background: gold;
+    color: white;
+    font-weight: bold;
+    animation: status 2s ease-in-out forwards;
+}
+
+#status.error {
+    background: crimson;
+    color: white;
+    font-weight: bold;
+    animation: status 2s ease-in-out forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+/*responsive media query*/
+
+@media(max-width: 920px) {
+    .home {
+        background: url('images/circuit-board-on-black-background-vector-21550924.jpg') no-repeat;
+    }
+    .about .about-content .left img {
+        height: 300px;
+        width: 300px;
+    }
+    .social .social-content .card {
+        width: calc(50% - 20px);
+        margin: 10px
+    }
+    .social .social-content .card:hover {
+        transform: scale(1.1);
+        background: white;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1604) {
+    .home {
+        background-image: url('images/longscreen1500.jpg') repeat-y;
+    }
+}
+
+@media (max-width: 999px) {
+    .projects .carousel .card img {
+        margin-left: 25%
+    }
+    .max-width {
+        padding: 0 40px;
+    }
+    .navbar .menu li a:hover {
+        color: gold;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all ease-in-out 0.3s;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 7px 10px;
+    }
+    .about .about-content .column {
+        width: 50%;
+    }
+    .about .about-content .left {
+        display: flex;
+        flex: 100%;
+        justify-content: center;
+    }
+    .about .about-content .right {
+        flex: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 670px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .projects .carousel .card img {
+        margin-left: 25%
+    }
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+    .home .home-content a {
+        font-size: 18px;
+        padding: 5px 8px;
+    }
+    .about .about-content .left img {
+        height: 250px;
+        width: 250px;
+    }
+    .about .about-content .left {
+        display: flex;
+        flex: 100%;
+        justify-content: center;
+    }
+    .social .social-content .card {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    .social .social-content .card .box {
+        transition: all 0.3s ease-in-out;
+    }
+    .social .social-content .card:hover {
+        transform: scale(1.2);
+        background: white;
+    }
+    .social .social-content .card:hover .box {
+        transform: scale(1.1);
+        color: gold;
+    }
+    .skills .skills-content .column {
+        width: 100%;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+}
